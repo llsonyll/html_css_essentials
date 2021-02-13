@@ -1,12 +1,56 @@
 *{
   padding: 0px;
-  margin: 0px;
+  margin: 0px auto;
   background: #fff;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #212121;
 }
+body{
+  width: 1366px;
+}
 .top-area{
+  margin-bottom: 2rem;
   width: 1366px;
   height: 350px;
   background: linear-gradient(3.36deg, #212325 -63.62%, rgba(255, 255, 255, 0) 43.49%), url(imagenes_home/patron-1.png);
+}
+.content-area{
+  display: flex;
+}
+.content-area .side-menu{
+  flex: 0.2;
+  padding: 0px 25px;
+}
+.content-area .content{
+  flex: 0.8;
+}
+
+.content h1{
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70px;
+  margin-bottom: 1rem;
+}
+.content p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+footer{
+  width: 100%;
+  height: 150px;
+  background: #212429;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .copy{
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  background: #212429;
+}
+hr{
+  margin: 4rem 0;
 }
