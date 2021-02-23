@@ -16,6 +16,7 @@ body{
 }
 .content-area{
   display: flex;
+  padding: 0px 100px;
 }
 .content-area .side-menu{
   flex: 0.2;
@@ -36,6 +37,13 @@ body{
   font-weight: 400;
   line-height: 24px;
 }
+
+.step{
+  width: 100%;
+  margin: 20px 0;
+}
+
+
 footer{
   width: 100%;
   height: 150px;

@@ -10,38 +10,48 @@
 <body>
   <div class="top-area"></div>
   <div class="content-area">
-    <div class="side-menu">
+    <header class="side-menu">
       <nav>
         <h3>CONTENIDO</h3>
-        <p>Setup</p>
-        <ol>
-          <li><a href="#google-chrome">Google Chrome</a></li>
-          <li><a href="#vsc">Visual Studio Code</a></li>
-          <li><a href="#figma">Figma</a></li>
-          <li><a href="#github">GitHub</a></li>
-        </ol>
-        <p>Concepto esenciales del Desarrollo Web</p>
-        <ol>
-          <li><a href="#html">Qué es HTML</a></li>
-          <li><a href="#etiquetas">Etiquetas</a></li>
-          <li><a href="#dom">DOM</a></li>
-          <li><a href="#semantica">Semantica</a></li>
-          <li><a href="#atributos">Atributos</a></li>
-          <li><a href="#css">Qué es CSS</a></li>
-        </ol>
+        <!-- MENU DESPLEGABLE abierto por defecto -->
+        <details open>
+          <summary>
+            Setup
+          </summary>
+          <ol>
+            <li><a href="#google-chrome">Google Chrome</a></li>
+            <li><a href="#vsc">Visual Studio Code</a></li>
+            <li><a href="#figma">Figma</a></li>
+            <li><a href="#github">GitHub</a></li>
+          </ol>
+        </details>
+        <details>
+          <summary>
+            Concepto esenciales del Desarrollo Web
+          </summary>
+          <ol>
+            <li><a href="#html">Qué es HTML</a></li>
+            <li><a href="#etiquetas">Etiquetas</a></li>
+            <li><a href="#dom">DOM</a></li>
+            <li><a href="#semantica">Semantica</a></li>
+            <li><a href="#atributos">Atributos</a></li>
+            <li><a href="#css">Qué es CSS</a></li>
+          </ol>
+        </details>
       </nav>
-    </div>
+    </header>
 
     <div class="content">
       <h1>Curso Esencial de HTML y CSS</h1>
       <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de
         contenidos,
         en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
+
       <!-- DIVISOR DE SECCION -->
       <hr>
 
       <!-- Seccion SETUP -->
-      <h3>Setup</h3>
+      <h2>Setup</h2>
       <div id="google-chrome" class="step">
         <img src="imagenes_home/google-chrome.png" alt="logo_google_chrome">
         <h4>1. Google Chrome</h4>
@@ -76,13 +86,28 @@
 
       <!-- SECCION CONCEPTOS BASICOS -->
       <h3>Conceptos esenciales del Desarrollo Web</h3>
-      <div id="html">
+      <div class="basic-area" id="html">
         <h4>1. Qué es HTML?</h4>
         <p> Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web. Define el
           significado
-          y la estructura del contenido.</p>
+          y la estructura del contenido. </p>
+          <div class="code-area">
+            <pre>
+              &lt;!DOCTYPE html&gt;
+              &lt;html lang=&quot;en&quot;&gt;
+              &lt;head&gt;
+              &lt;meta charset=&quot;UTF-8&quot;&gt;
+              &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+              &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+              &lt;title&gt;Document&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+              &lt;/body&gt;
+              &lt;/html&gt;
+            </pre>
+          </div>
       </div>
-      <div id="etiquetas">
+      <div class="basic-area" id="etiquetas">
         <h4>2. Etiquetas</h4>
         <p> Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y cada una tiene
         características y usos diferentes aunque visualmente den un resultado similar.</p>
@@ -91,14 +116,14 @@
         pequeña idea de su uso pero en este curso vamos a usar las más importantes y que serán parte de tu día a día como
         Software Developer.</p>
       </div>
-      <div id="dom">
+      <div class="basic-area" id="dom">
         <h4>3. DOM</h4>
         <p> El Document Object Model es una estructura de árbol que representará todos nuestros proyectos web como si un árbol
         genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos identificar
         dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
         <!-- <img src="./imagenes_home/dom.png" alt="DOM"/> -->
       </div>
-      <div id="semantica">
+      <div class="basic-area" id="semantica">
         <h4>4. Semántica</h4>
         <p>La semántica le brinda sentido a cada elemento existen en un sitio web, algunos elementos será meramente decorativos y
         no deben significar nada pero otros serán títulos y deberán estar en diferente jerarquías o alguna secciones serán más
@@ -106,13 +131,13 @@
         categorizar y será la herramientas más valiosa para estar en los primeros resultados de búsqueda SEO. También ayudará a
         la accesibilidad de tu sitio web, para que personas con habilidades diferentes puedan entender cada contenido.</p>
       </div>
-      <div id="atributos">
+      <div class="basic-area" id="atributos">
         <h4>5. Atributos</h4>
         <p>Los atributos le dan características extra a las etiquetas para complementar información y son pre programadas por el
         navegador, algunos atributos funcionan en todas las etiquetas de la misma forma como ‘class’ pero otros atributos
         funcionan en solo alguna etiquetas como src</p>
       </div>
-      <div id="css">
+      <div class="basic-area" id="css">
         <h4>6. CSS</h4>
         <p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir
         la presentación de documentos HTML</p>
