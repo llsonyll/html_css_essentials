@@ -2,8 +2,13 @@
   font-size: 16px;
   /* variables --rojoderojos: #ff0000; */
   --main-color: #212121;
+  --main-color-05: #424242;
   --main-color10: #616161;
   --top-bottom-background: #212429;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 *{
@@ -18,18 +23,20 @@
   height: 350px;
   background: linear-gradient(3.36deg, rgba(255,255,255, .5) -63.62%, rgba(255, 255, 255, 0) 80%), url(imagenes_home/patron-1.png);
 }
-.content-area{
-  display: flex;
-  padding: 4rem 7.25rem;
+.header{
+  top: 0;
+  position: sticky;
 }
-.content-area header{
-  flex: 0.4;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
+.header-content{
+  position: relative;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 84px;
   font-size: 14px;
   line-height: 24px;
+  width: 198px;
 }
 header a{
   color: var(--main-color10);
@@ -44,44 +51,79 @@ header details ol{
 header a:hover{
   color: var(--main-color);
 }
-.content-area main{
-  flex: 0.6;
+
+.content-area .main{
   padding: 0px 2rem;
 }
-main h1{
+main .wrapper{
+  width: 902px;
+  margin: auto;
+}
+.main h1{
+  margin-top: 4rem;
   font-size: 60px;
   font-weight: 400;
   line-height: 70px;
   margin-bottom: 1rem;
 }
-main p{
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-}
 
 /* ESTILOS PARA LAS SECCIONES DE CONTENIDO */
 .section_content{
-  width: 100%;
-  margin: 20px 0;
+  position: relative;
   counter-reset: subtitulo-contenido;
 }
-/* Subtitulos de contenido */
+.section_content h2{
+  font-size: 32px;
+  margin: 64px 0 40px;
+  font-weight: 400;
+}
 .section_content h4{
+  position: sticky;
+  top: 0;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 16px;
+  margin-bottom: 16px;
   counter-increment: subtitulo-contenido;
+  padding-bottom: 8px;
 }
 
 .section_content h4::before{
   content: counter(subtitulo-contenido)". ";
 }
 
-h4::after{
+.section_content h4::after{
   content: "";
-  width: 20px;
-  height: 5px;
-  background: #000;
-  display: inline-block;
+  width: 80px;
+  height: 4px;
+  background: var(--main-color-05) ;
+  /* Para usarla con respecto al elemento contenedor
+  es necesario q este se tenga posicion : relativa/relative */
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
+
+.section_content>p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.section_content ol li{
+  line-height: 24px;
+}
+
+
+.section_content ul li{
+  margin-bottom: 16px;
+}
+
+.section_content .domImage{
+  height: 60vh;
+}
+
 
 /* Subtitulos de MAIN */
 .main h3{
@@ -95,8 +137,30 @@ h4::after{
 
 /* Caja con codigo de ejemplo */
 pre{
-  background: khaki;
+  background: #FEC62E;
+  line-height: 24px;
   padding: 40px;
+}
+
+blockquote{
+  margin: 32px 0;
+  padding-left: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-left: 4px solid var(--main-color);
+}
+
+blockquote p{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+blockquote p span{
+  color: var(--main-color10);
+}
+blockquote p span::before{
+  content: '-';
 }
 
 /* <<<<<<<<<<<<<<< SEPARADOR  >>>>>>>>>>>>> */
