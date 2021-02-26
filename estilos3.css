@@ -1,0 +1,100 @@
+:root{
+  font-size: 16px;
+  /* variables --rojoderojos: #ff0000; */
+  --main-color: #212121;
+  --main-color10: #616161;
+  --top-bottom-background: #212429;
+}
+
+*{
+  /* margin: 0px auto; */
+  margin: 0px;
+  background: #fff;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-color);
+}
+.top-area{
+  margin-bottom: 2rem;
+  height: 350px;
+  background: linear-gradient(3.36deg, rgba(255,255,255, .5) -63.62%, rgba(255, 255, 255, 0) 80%), url(imagenes_home/patron-1.png);
+}
+.content-area{
+  display: flex;
+  padding: 4rem 7.25rem;
+}
+.content-area .side-menu{
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+
+  font-size: 14px;
+  line-height: 24px;
+}
+.side-menu a{
+  color: var(--main-color10);
+  text-decoration: none;
+}
+.side-menu details summary{
+  font-weight: bold;
+}
+.side-menu details ol{
+  padding-left: 1rem;
+}
+.side-menu a:hover{
+  color: var(--main-color);
+}
+.content-area .content{
+  flex: 0.8;
+  padding: 0px 2rem;
+}
+
+.content h1{
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 70px;
+  margin-bottom: 1rem;
+}
+.content p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.content h3{
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.step img{
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.step h4{
+  margin-bottom: 1.25rem;
+}
+
+
+
+footer{
+  width: 100%;
+  height: 150px;
+  background: var(--top-bottom-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .copy{
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+  background: var(--top-bottom-background);
+}
+hr{
+  margin: 4rem 0;
+}
