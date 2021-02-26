@@ -134,10 +134,13 @@ blockquote p{
 
 h4::after{
   content: "";
-  width: 20px;
+  width: 80px;
   height: 5px;
-  background: #000;
+  background: #fff;
   display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 /* Subtitulos de MAIN */
@@ -149,6 +152,8 @@ h4{
   letter-spacing: 0em;
   text-align: left;
   margin-block: 1rem;
+  padding-block-end: .5rem;
+  position: relative;
 }
 
 .section-content input{

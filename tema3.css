@@ -19,16 +19,24 @@ body{
   scroll-behavior: smooth;
 }
 
+.icons-area img{
+  margin-block-start: 40px;
+}
+
+img{
+  display: block;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1rem;
+  max-inline-size: 100%;
+}
+
 /* <<<<<<<<<<<<<<< PIE DE PAGINA  >>>>>>>>>>>>> */
 footer{
   height: 150px;
   background: var(--top-bottom-background);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  padding-block-start: 50px;
 }
-
 
 footer .copy{
   letter-spacing: 5px;
