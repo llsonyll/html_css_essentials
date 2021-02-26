@@ -25,13 +25,14 @@ body{
 
 img{
   display: block;
-  margin-block-start: 1.5rem;
-  margin-block-end: 1rem;
+  margin-block-start: 1rem;
+  margin-block-end: 40px;
   max-inline-size: 100%;
 }
 
 /* <<<<<<<<<<<<<<< PIE DE PAGINA  >>>>>>>>>>>>> */
 footer{
+  margin-block-start: 80px;
   height: 150px;
   background: var(--top-bottom-background);
   text-align: center;
@@ -43,6 +44,13 @@ footer .copy{
   margin-bottom: 10px;
   color: #fff;
   background: var(--top-bottom-background);
+}
+
+.propiedades li{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-block-end: 1rem;
 }
 
 /* PARA PANTALLAS GRANDES */
@@ -61,8 +69,9 @@ footer .copy{
 /* Para los botones de switch tema */
 .temas{
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  top: -100px;
+  right: 0;
+  z-index: 10;
 }
 .temas a{
   text-decoration: none;
@@ -74,4 +83,184 @@ footer .copy{
   padding: .5rem;
   font-size: .8rem;
   cursor: pointer;
+}
+
+pre{
+  overflow: hidden;
+}
+
+main{
+  position: relative;
+}
+
+.wrapper{
+  max-inline-size: 966px;
+  margin: auto;
+}
+
+.content-area{
+  margin-block-start: 120px;
+  padding: 1rem;
+}
+
+h1{
+  font-size: 60px;
+  font-weight: 400;
+  margin-block-end: 1rem;
+}
+
+h3{
+  margin-block-start: 56px;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 24px;
+}
+
+.main-content{
+  position: relative;
+}
+
+.menu{
+  padding-inline-start: 1rem;
+}
+
+.menu::before{
+  content: '';
+  width: 4px;
+  height: 100%;
+  display: inline-block;
+  background: #C4C4C4;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section-content{
+  position: relative;
+}
+
+hr{
+  margin-block: 4rem;
+  background: var(--main-color10);
+}
+
+summary{
+  color: var(--main-color10);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.menu a{
+  color: var(--main-color10);
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.menu a:hover{
+  color: var(--main-color);
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-container{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+h3{
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 37.5px;
+}
+
+p{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--main-color-05);
+}
+
+.logos img{
+  margin-block-start: 40px;
+  margin-block-end: 1rem;
+}
+
+h4{
+  margin-block-end: 1rem;
+  margin-block-start: 40px;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+blockquote{
+  position: relative;
+  margin-inline: 0;
+  margin-block: 80px;
+  padding-inline-start: 16px;
+}
+
+blockquote::before{
+  content: '';
+  width: 4px;
+  height: 100%;
+  background: var(--main-color);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+blockquote p{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--main-color);
+  line-height: 32px;
+}
+
+blockquote p span{
+  color: var(--main-color10);
+}
+
+pre{
+  background: #E5E5E5;
+  padding: 40px;
+  margin-block-end: 40px;
+}
+
+
+.slider{
+  text-align: center;
+}
+.scroll-navigation a{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: var(--top-bottom-background);
+  margin: .5rem;
+  border-radius: 50%;
+}
+
+input{
+  width: 248px;
+  padding: 16px;
+  margin-inline-end: 1rem;
+  margin-block: .5rem;
+  box-sizing: border-box;
+  border-radius: 90px;
+}
+
+input[type=button]{
+  background: #000;
+  color: white;
+}
+
+@media screen and (min-width: 1366px){
 }

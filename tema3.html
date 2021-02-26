@@ -41,31 +41,39 @@
 </head>
 
 <body>
-  <div class="top-area">
-    <div class="temas">
-      <a href="./index.html">
-        <div class="button">Tema 1</div>
-      </a>
-      <a href="./tema2.html">
-        <div class="button">Tema 2</div>
-      </a>
-      <a href="./tema3.html">
-        <div class="button">Tema 3</div>
-      </a>
-      <a href="./tema4.html">
-        <div class="button">Tema 4</div>
-      </a>
-      <a href="./tema5.html">
-        <div class="button">Tema 5</div>
-      </a>
-    </div>
-  </div>
   <div class="content-area">
-    <div class="header">
+    <main class="main">
       <div class="wrapper">
-        <div class="header-content">
-          <header>
+        <div class="main-content">
+          <div class="temas">
+            <a href="./index.html">
+              <div class="button">Tema 1</div>
+            </a>
+            <a href="./tema2.html">
+              <div class="button">Tema 2</div>
+            </a>
+            <a href="./tema3.html">
+              <div class="button">Tema 3</div>
+            </a>
+            <a href="./tema4.html">
+              <div class="button">Tema 4</div>
+            </a>
+            <a href="./tema5.html">
+              <div class="button">Tema 5</div>
+            </a>
+          </div>
+
+          <div class="section-content">
+            <!-- SECCION SUPERIOR > TITULO -->
+            <h1>Curso Esencial de HTML y CSS</h1>
+            <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación
+              de
+              contenidos,
+              en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
             <h3>CONTENIDO</h3>
+          </div>
+          <div class="section-content menu">
+
             <details open>
               <summary>Setup</summary>
               <ol>
@@ -100,24 +108,11 @@
                 <li><a href="#slider">Slider con HTML</a></li>
               </ol>
             </details>
-          </header>
-        </div>
-      </div>
-    </div>
-
-    <main class="main">
-      <div class="wrapper">
-        <div class="main-content">
-          <!-- SECCION SUPERIOR > TITULO -->
-          <h1>Curso Esencial de HTML y CSS</h1>
-          <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación
-            de
-            contenidos,
-            en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
-          <!-- DIVISOR DE SECCION -->
+          </div>
+          <!-- Divisor de seccion -->
           <hr>
           <!-- Seccion SETUP -->
-          <section class="section-content">
+          <section class="section-content logos">
             <h3>Setup</h3>
             <img id="google-chrome" src="imagenes_home/google-chrome.png" alt="logo_google_chrome">
             <h4>Google Chrome</h4>
@@ -226,21 +221,21 @@
             <h4>El modelo de caja está compuesto por:</h4>
             <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
               herramientas de desarrollo avanzadas y de amigable uso.</p>
-            <ol>
+            <ol class="componentes">
               <li>Tamaño del del contenido / ancho y alto</li>
               <li>Padding / Relleno</li>
               <li>Border / Bordes</li>
               <li>Margin / Márgenes</li>
             </ol>
             <h4 id="fisicas">Propiedades físicas para el modelo de caja:</h4>
-            <ul>
+            <ul class="propiedades">
               <li>width / height</li>
               <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
               <li>border / border-top | border-right | border-bottom | border-left</li>
               <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
             </ul>
             <h4 id="logicas">Propiedades lógicas para el modelo de caja:</h4>
-            <ul>
+            <ul class="propiedades">
               <li>inline-size / block-size</li>
               <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start |
                 margin-inline-end</li>
@@ -277,13 +272,13 @@
           </section>
 
           <section class="section-content">
-            <p>Si tienes alguna pregunta escribme a
+            <h3>Suscríbete a nuestro newsletter</h3>
+            <p>Si tienes alguna pregunta escribeme a
               <a href="mailto:sony_s07@hotmail.es">sony_s07@hotmail.es</a>
             </p>
-            <h3>Suscríbete a nuestro newsletter</h3>
             <input type="text" placeholder="Nombre">
             <input type="text" placeholder="Correo Electrónico">
-            <div class="button"> Subscribirme </div>
+            <input type="button" value="Subscribirme">
             <!-- <button class="button"> Subscribirme </button> -->
           </section>
         </div>

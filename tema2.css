@@ -63,8 +63,8 @@ footer .copy{
 }
 .temas .button{
   display: inline-block;
-  background: #062d5c;
-  color: white;
+  background: #fff;
+  color: var(--main-color);
   padding: .5rem;
   font-size: .8rem;
   cursor: pointer;
@@ -215,6 +215,7 @@ input[type=button]{
 .form{
 margin-block-end: 6rem;
 }
+
 .slider{
   text-align: center;
 }
