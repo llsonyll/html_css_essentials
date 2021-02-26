@@ -45,13 +45,16 @@ h2{
   margin-block: 40px;
   font-weight: 600;
 }
+
 header a{
   color: var(--main-color10);
   text-decoration: none;
 }
+
 header details summary{
   font-weight: bold;
 }
+
 header li{
   color: var(--main-color10);
 }
@@ -272,7 +275,9 @@ footer .copy{
   header{
     position: absolute;
     inset-block-start: 0px;
-    inset-inline-start: 40px;
+    inset-inline: 40px;
+    /* inset-inline-start: auto;
+    inset-inline-end: auto; */
     inline-size: 160px;
   }
 
