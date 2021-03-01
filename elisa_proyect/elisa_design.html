@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Elisa</title>
+  <link rel="stylesheet" href="elisa_design.css">
+  <link rel="text/javascript" href="./scripts.js">
+</head>
+<body>
+  <input type="range" name="rango" id="slider" min="1" max="36" step="1">
+  <script>
+    const slider = document.querySelector('#slider');
+    console.log(slider);
+    console.log(slider.value);
+
+    slider.addEventListener('input', handleInputSlider);
+
+    function handleInputSlider() {
+      console.log(this.value)
+    }
+  </script>
+</body>
+</html>
