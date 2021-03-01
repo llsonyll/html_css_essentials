@@ -6,18 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <meta property="og:title" content="HTML y CSS fundamentals" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://llsonyll.github.io/html_css_essentials/" />
   <meta property="og:image" content="https://llsonyll.github.io/html_css_essentials/imagenes_home/image%205.png" />
   <meta property="og:description" content="Curso de Leonidas, html y css fundamentals" />
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,700&display=swap"
-      rel="stylesheet"> -->
   <link rel="stylesheet" href="tema4.css">
-  <!-- <link rel="stylesheet" href="styles_physical_box.css"> -->
   <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
@@ -38,6 +33,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <title>HTML and CSS Essentials</title>
+  <!-- <script src="./scripts.js"></script> -->
 </head>
 
 <body>
@@ -76,7 +72,7 @@
               </ol>
             </details>
 
-            <details open>
+            <details>
               <summary>
                 Concepto esenciales del Desarrollo Web
               </summary>
@@ -89,7 +85,7 @@
                 <li><a href="#css">Qué es CSS</a></li>
               </ol>
             </details>
-            <details open>
+            <details>
               <summary>
                 Modelo de caja
               </summary>
@@ -108,20 +104,23 @@
     <main class="main">
       <div class="wrapper">
         <div class="main-content">
-          <!-- SECCION SUPERIOR > TITULO -->
-          <h1>Curso Esencial de HTML y CSS</h1>
-          <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación
-            de
-            contenidos,
-            en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
-          <!-- DIVISOR DE SECCION -->
-          <hr>
-          <!-- Seccion SETUP -->
-          <section class="section-content">
+          <section class="section-content center">
+            <!-- SECCION SUPERIOR > TITULO -->
+            <h1>Curso Esencial de HTML y CSS</h1>
+            <p>Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación
+              de
+              contenidos,
+              en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
+            <!-- DIVISOR DE SECCION -->
+            <hr>
+            <!-- Seccion SETUP -->
+          </section>
+
+          <section class="section-content center logos">
             <h3>Setup</h3>
             <img id="google-chrome" src="imagenes_home/google-chrome.png" alt="logo_google_chrome">
             <h4>Google Chrome</h4>
-            <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
+            <p>Chrome va a ser <strong>el navegador que utilizaremos</strong> en el curso por su extenso soporte de nuevos estándares y
               herramientas de desarrollo avanzadas y de amigable uso.</p>
             <img id="vsc" src="imagenes_home/visual-studio.png" alt="logo_visual_studio">
             <h4>Visual Studio Code</h4>
@@ -133,7 +132,7 @@
             <h4>Figma</h4>
             <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para
               su
-              implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
+              implementación por su <strong>fácil uso</strong> porque puede ser usado directamente desde el navegador.</p>
             <img id="github" src="imagenes_home/github.png" alt="logo_github">
             <h4>GitHub</h4>
             <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y
@@ -144,15 +143,16 @@
           </section>
 
           <!-- SECCION CITA TEXTUAL -->
-          <section class="section-content">
+
+          <section class="section-content quote">
             <blockquote>
-              <p>“Este es el inicio de tu carrera como Desarrollador Web”</p>
-              <p> <span>- Leonidas Esteban </span> </p>
+              <p>“Visca Barca”</p>
+              <p> <span>- JJRB </span> </p>
             </blockquote>
           </section>
 
           <!-- SECCION CONCEPTOS BASICOS -->
-          <section class="section-content">
+          <section class="section-content center">
             <h3>Conceptos esenciales del Desarrollo Web</h3>
             <h4 id="html">1. Qué es HTML?</h4>
             <p> Hyper Text Markup Language o Lenguaje de marcas Hipertexto. Es el componente más básico de la web.
@@ -221,7 +221,7 @@
           </section>
 
           <!-- Seccion Modelo de caja -->
-          <section class="section-content">
+          <section class="section-content caja">
             <h3 id="caja_inicio">Modelo de caja</h3>
             <h4>El modelo de caja está compuesto por:</h4>
             <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
@@ -252,17 +252,17 @@
             <h4 id="slider">Slider con HTML</h4>
             <div class="slider">
               <scroll-container class="slider-container">
-                <scroll-page class="slider-slider">
-                  <iframe id="video1" class="video" width="560" height="315" src="https://www.youtube.com/embed/jGpCNxXPfVA"
+                <scroll-page id="video1" class="slider-slider">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/jGpCNxXPfVA"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 </scroll-page>
-                <scroll-page class="slider-slider">
+                <scroll-page id="video2" class="slider-slider">
                   <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vwu5pvalEyI" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 </scroll-page>
-                <scroll-page class="slider-slider">
+                <scroll-page id="video3" class="slider-slider">
                   <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/s0BFHg5lYHQ" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -276,13 +276,15 @@
             </div>
           </section>
           <section class="section-content">
-            <p>Si tienes alguna pregunta escribme a
+            <p>Si tienes alguna pregunta escribime a
               <a href="mailto:sony_s07@hotmail.es">sony_s07@hotmail.es</a>
             </p>
             <h3>Suscríbete a nuestro newsletter</h3>
             <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Correo Electrónico">
-            <div class="button"> Subscribirme </div>
+            <div class="email">
+              <input class="email" type="text" placeholder="Correo Electrónico">
+              <div class="button"> Subscribirme </div>
+            </div>
             <!-- <button class="button"> Subscribirme </button> -->
           </section>
         </div>
