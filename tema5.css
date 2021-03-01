@@ -3,57 +3,245 @@
 :root{
   font-size: 16px;
   /* variables --rojoderojos: #ff0000; */
-  --main-color: #212121;
-  --main-color-05: #424242;
-  --main-color10: #616161;
-  --top-bottom-background: #212429;
+  --font-color: #fff;
+  --main-color: #232946;
+  --main-color-05: #B8C1EC;
+  --altern-background: #D4939D;
 }
 
 body{
   /* margin: 0px auto; */
   margin: 0;
   /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-  font-family: 'Roboto', sans-serif;
-  color: var(--main-color);
-  background: #fff;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--font-color);
+  background: var(--main-color);
   scroll-behavior: smooth;
 }
 
 /* <<<<<<<<<<<<<<< PIE DE PAGINA  >>>>>>>>>>>>> */
 footer{
   height: 150px;
-  background: var(--top-bottom-background);
+  background: var(--altern-background);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-
 footer .copy{
   letter-spacing: 5px;
   margin-bottom: 10px;
-  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--main-color);
   background: var(--top-bottom-background);
 }
 
 /* PARA PANTALLAS GRANDES */
 
-.top-area{
-  position: relative;
-  height: 350px;
-  background: linear-gradient(3.36deg, rgba(255,255,255, .5) -63.62%, rgba(255, 255, 255, 0) 80%), url(imagenes_home/patron-1.png);
+
+
+p{
+  color: var(--main-color-05);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+hr{
+  margin-block-start: 3.625rem;
+  margin-block-end: 2.5rem;
+}
+
+.content-area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-block-start: 6.25rem;
+}
+
+h3{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.section-content h4{
+  display: block;
+  margin-block-start: 2.5rem;
+  margin-block-end: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.section-content h5{
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-block-start: 2.5rem;
+  margin-block-end: 1rem;
+}
+
+blockquote{
+  background: var(--altern-background);
+  border-radius: 8px;
+  margin: 0;
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  margin-block-start: 3.625rem;
+  margin-block-end: 2.5rem;
+}
+
+blockquote p{
+  color: var(--main-color);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+pre{
+  padding: 2.5rem;
+}
+
+.section-content img{
+  width: 100%;
+  height: auto;
+  overflow-x: scroll;
+}
+
+.logos img{
+  margin-block-start: 2.5rem;
+  margin-block-end: 1rem;
+  width: auto;
+  display: block;
+}
+
+input{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding-block: .75rem;
+  padding-inline: 1rem;
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+  margin-block-end: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: .5rem;
+}
+
+input[type=submit]{
+  background: var(--altern-background);
+  border: 1px solid var(--altern-background);
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-block-end: 80px;
+}
+
+.section-content ol{
+  padding-inline: 1rem;
+}
+
+.section-content ul{
+  list-style: none;
+  padding-inline: 0;
+}
+
+.section-content li{
+  display: inline-block;
+  font-size: 17px;
+  color: var(--main-color-05);
+  margin-block: 0;
+}
+
+.section-content ul li::before{
+  content: '';
+  width: .5rem;
+  height: .5rem;
+  background: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-inline-end: 1rem;
+}
+
+/* Menu */
+
+.header{
+  width: 306px;
+  padding-inline: 1rem;
+}
+
+header{
+  width: 306px;
+}
+
+header h3{
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+header a{
+  text-decoration: none;
+  color: var(--main-color-05);
+}
+
+header ol{
+  list-style: none;
+}
+
+header details{
+  counter-reset: contador;
+}
+
+header summary{
+  font-weight: 700;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+header details li{
+  counter-increment: contador;
+  margin-block: 1rem;
+  font-size: 14px;
+}
+
+header details ol{
+  padding-inline-start: 1rem;
+}
+
+header details ol li::before{
+  display: inline-block;
+  content: counter(contador)".";
+  color: var(--main-color-05);
+  margin-inline-end: 1rem;
+}
+
+
+/* Contenido */
+.wrapper{
+  max-inline-size: 636px;
+}
+
+h1{
+  margin-block-start: 0;
+  margin-block-end: 1rem;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 /* PARA PANTALLAS PEQUEÑAS */
 @media screen and (min-width: 1366px){
-
+  .content-area{
+    flex-direction: row;
+  }
 }
 
 /* Para los botones de switch tema */
 .temas{
   position: absolute;
-  bottom: 10px;
+  top: 10px;
   right: 10px;
 }
 .temas a{

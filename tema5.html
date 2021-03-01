@@ -2,22 +2,23 @@
 <html lang="es">
 
 <head>
+  <noscript>
+    For full functionality of this site it is necessary to enable JavaScript.
+    Here are the <a href="https://www.enablejavascript.io/">
+      instructions how to enable JavaScript in your web browser</a>.
+  </noscript>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,900&display=swap"
     rel="stylesheet">
   <meta property="og:title" content="HTML y CSS fundamentals" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://llsonyll.github.io/html_css_essentials/" />
   <meta property="og:image" content="https://llsonyll.github.io/html_css_essentials/imagenes_home/image%205.png" />
   <meta property="og:description" content="Curso de Leonidas, html y css fundamentals" />
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300;1,700&display=swap"
-      rel="stylesheet"> -->
   <link rel="stylesheet" href="tema5.css">
-  <!-- <link rel="stylesheet" href="styles_physical_box.css"> -->
   <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
@@ -38,12 +39,13 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <title>HTML and CSS Essentials</title>
+  <script src="scripts.js"></script>
 </head>
 
 <body>
-  <div class="top-area">
+  <div class="content-area">
     <div class="temas">
-      <a href="./index.html">
+      <a id="tema1" href="./index.html">
         <div class="button">Tema 1</div>
       </a>
       <a href="./tema2.html">
@@ -59,15 +61,15 @@
         <div class="button">Tema 5</div>
       </a>
     </div>
-  </div>
-  <div class="content-area">
     <div class="header">
       <div class="wrapper">
         <div class="header-content">
           <header>
             <h3>CONTENIDO</h3>
             <details open>
-              <summary>Setup</summary>
+              <summary>
+                Setup
+              </summary>
               <ol>
                 <li><a href="#google-chrome">Google Chrome</a></li>
                 <li><a href="#vsc">Visual Studio Code</a></li>
@@ -117,24 +119,24 @@
           <!-- DIVISOR DE SECCION -->
           <hr>
           <!-- Seccion SETUP -->
-          <section class="section-content">
+          <section class="section-content logos">
             <h3>Setup</h3>
-            <img id="google-chrome" src="imagenes_home/google-chrome.png" alt="logo_google_chrome">
+            <img id="google-chrome" src="imagenes_home/gchrome_dark.png" alt="logo_google_chrome">
             <h4>Google Chrome</h4>
             <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
               herramientas de desarrollo avanzadas y de amigable uso.</p>
-            <img id="vsc" src="imagenes_home/visual-studio.png" alt="logo_visual_studio">
+            <img id="vsc" src="imagenes_home/vsc_dark.png" alt="logo_visual_studio">
             <h4>Visual Studio Code</h4>
             <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la
               capacidad de extenderlo por medio de plugins lo hace el complemento perfecto para cualquier programador
               sin importar
               el lenguaje en el que se desemvuelva.</p>
-            <img id="figma" src="imagenes_home/figma.png" alt="logo_figma" title="Logo de Figma" />
+            <img id="figma" src="imagenes_home/figma_dark.png" alt="logo_figma" title="Logo de Figma" />
             <h4>Figma</h4>
             <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para
               su
               implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
-            <img id="github" src="imagenes_home/github.png" alt="logo_github">
+            <img id="github" src="imagenes_home/github_dark.png" alt="logo_github">
             <h4>GitHub</h4>
             <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y
               programadores de
@@ -165,7 +167,8 @@
 &lt;head&gt;
 &lt;meta charset=&quot;UTF-8&quot;&gt;
 &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;
 &lt;title&gt;Document&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -223,7 +226,7 @@
           <!-- Seccion Modelo de caja -->
           <section class="section-content">
             <h3 id="caja_inicio">Modelo de caja</h3>
-            <h4>El modelo de caja está compuesto por:</h4>
+            <h5>El modelo de caja está compuesto por:</h5>
             <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
               herramientas de desarrollo avanzadas y de amigable uso.</p>
             <ol>
@@ -232,14 +235,14 @@
               <li>Border / Bordes</li>
               <li>Margin / Márgenes</li>
             </ol>
-            <h4 id="fisicas">Propiedades físicas para el modelo de caja:</h4>
+            <h5 id="fisicas">Propiedades físicas para el modelo de caja:</h5>
             <ul>
               <li>width / height</li>
               <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
               <li>border / border-top | border-right | border-bottom | border-left</li>
               <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
             </ul>
-            <h4 id="logicas">Propiedades lógicas para el modelo de caja:</h4>
+            <h5 id="logicas">Propiedades lógicas para el modelo de caja:</h5>
             <ul>
               <li>inline-size / block-size</li>
               <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start |
@@ -257,10 +260,12 @@
             <a href="mailto:sony_s07@hotmail.es">sony_s07@hotmail.es</a>
           </p>
           <section class="section-content">
-            <h3>Suscríbete a nuestro newsletter</h3>
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Correo Electrónico">
-            <div class="button"> Subscribirme </div>
+            <h5>Suscríbete a nuestro newsletter</h5>
+            <form action="">
+              <input type="text" placeholder="Nombre">
+              <input type="text" placeholder="Correo Electrónico">
+              <input type="submit" value="Subscribirme">  </input>
+            </form>
             <!-- <button class="button"> Subscribirme </button> -->
           </section>
         </div>
